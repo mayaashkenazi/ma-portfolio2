@@ -1,0 +1,294 @@
+@font-face{
+  src: url(../fonts/PPNeueMontreal-Medium.otf);
+  font-family: Neue;
+}
+
+html{
+  scroll-padding-top: 50px; 
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: Neue;
+  color: white;
+}
+
+.dark-text{
+  color: black;
+}
+
+.navbar{
+  background-color: #0874ec;
+}
+
+.nav-link{
+  color: black;
+  font-family: Neue;
+  padding: 5px;
+  margin-right: 30px;
+  position: relative;
+
+  transition: transform .15s;
+  will-change: transform;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: black !important;
+}
+
+.contact-icon{
+  color: black;
+  font-family: Neue;
+  padding: 5px;
+  margin-right: 10px;
+  position: relative;
+
+  transition: transform .15s;
+  will-change: transform;
+
+  width: 40px;
+  height: 40px;
+}
+
+.contact-icon:hover {
+  transform: translateY(-2px);
+  color: black !important;
+  cursor: pointer;
+}
+
+.proj-overview{
+  padding-top: 5vh;
+  color: #3b3434;
+  background-color: #0874ec;
+  margin-top: 20vh;
+}
+
+.proj-overview-small{
+  margin-top: 10vh;
+}
+
+body {
+  font: Neue;
+  color: black;
+  background: #0874ec;
+}
+
+.main-text-div{
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.largest-text{
+  font-size: 700%;
+}
+
+.vid,
+.fig{
+  width: 100%;
+  border-width: 2px;
+}
+
+.sketch{
+  height: 20rem;
+}
+
+.carousel-item{
+  height: 25rem;
+  background: #58545c;
+  position: relative;
+}
+
+.container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body{
+  background-color: #0874ec;
+  color: black;
+}
+
+.accordion-button,
+.accordion-collapse,
+.collapse{
+  background-color: #0874ec;
+  color: white;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: #0874ec;
+  color: white;
+  box-shadow: none;
+}
+
+.project-div{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  color: black;
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.project-div:hover{
+  box-shadow: 0 0 11px #3b3434;
+}
+
+.hover-container {
+  position: relative;
+  display: block;
+  height: 300px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  width:  200px;
+  height: 200px;
+  object-fit:scale-down;
+  filter: brightness(0) invert(1);
+}
+
+.image-black {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  width:  200px;
+  height: 200px;
+  object-fit:scale-down;
+  filter: brightness(0);
+}
+
+.image-brown{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  width:  200px;
+  height: 200px;
+  object-fit:scale-down;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.hover-container:hover .image {
+  opacity: 0;
+}
+
+.hover-container:hover .image-black {
+  opacity: 0;
+}
+
+.hover-container:hover .image-brown {
+  opacity: 0;
+}
+
+.hover-container:hover .overlay {
+  opacity: 1;
+}
+
+.hover-container:hover .project-div{
+  transition: .3s ease;
+  box-shadow: 0 0 10px black;
+}
+
+.hover-text-light {
+  color: white;
+  font-size: 1.2vw !important;
+  padding-top: 5;
+}
+
+.hover-text-dark {
+  color: black;
+  font-size: 1.2vw !important;
+  padding-top: 5;
+}
+
+.proj1{
+  background-color: #e82404;
+  color: white;
+}
+
+.proj2{
+  background-color: #0874ec;
+  color: white;
+}
+
+.proj3{
+  background-color: #ffcc04;
+  color: black;
+}
+
+.proj4{
+  background-color: white;
+  color: black;
+} 
+
+#about{
+  color: white;
+}
+
+#foot,
+.foot-text{
+  color: black;
+}
+
+.text-link{
+  color: white;
+  text-decoration: none;
+}
+
+.text-link:hover{
+  color: white;
+  text-decoration: underline;
+}
